@@ -3,7 +3,10 @@ Teste feito para avaliar conhecimentos em Java e Angular.
 API feita com spring, utilizei a arquitetura mvc para organizar o projeto.
 
 Todos os métodos pedidos no enunciado do teste, estão na pasta service > DoadorService.java.
+ Não utilizei recursos avançados da linguagem, fiz o básico e utilizei HashMaps para para armazenar os dados, basicamente o que eu fazia era trazer todos os doadores da tabela com o findAll() e fazer o que era pedido nos tópicos utilizando for pra iterar os doadores e processar o que era pedido para adicionar ao HashMap que o método retornaria.
+
 Na Pasta model, está a classe do doador, na classe doador está o mapeamento para o JPA criar a tabela.
+
 Na Pasta controller, está a DoadorController.java, onde estão os endpoints da API.
 
 
