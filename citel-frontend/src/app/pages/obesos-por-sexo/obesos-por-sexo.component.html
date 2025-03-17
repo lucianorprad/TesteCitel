@@ -1,0 +1,18 @@
+<div class="container">
+  <h2 class="text-center mt-3 mb-3">Consultar Percentual de Obesos por Sexo (M/F)</h2>
+
+  <div class="d-flex justify-content-center mb-3">
+    <button (click)="obesosPorSexo() "class="btn btn-primary">Consultar Obesidade</button>
+  </div>
+
+  <div class="row mb-3 justify-content-center gx-3">
+    <div class="list-group">
+      <ul class="doadores-list">
+        <li *ngFor="let d of doadores">
+          <span class="sexo">{{ d.sexo }}</span>:
+          <span class="percentual"> {{ d.percentual }}% </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

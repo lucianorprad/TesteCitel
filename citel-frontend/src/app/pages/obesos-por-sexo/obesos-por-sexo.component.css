@@ -1,0 +1,27 @@
+.doadores-list {
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0;
+  width: 300px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.doadores-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+}
+
+.sexo {
+  font-weight: bold;
+  color: #333;
+}
+
+.percentual {
+  color: #007bff;
+  font-weight: bold;
+}

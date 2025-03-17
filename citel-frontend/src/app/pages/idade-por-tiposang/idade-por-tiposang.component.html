@@ -1,0 +1,18 @@
+<div class="container">
+  <h2 class="text-center mt-3 mb-3">Consultar Média de Idade por Tipo Sanguíneo</h2>
+
+  <div class="d-flex justify-content-center mb-3">
+    <button (click)="buscarIdadePorTipoSang() "class="btn btn-primary">Consultar Média de Idade</button>
+  </div>
+
+  <div class="row mb-3 justify-content-center gx-3">
+    <div class="list-group">
+      <ul class="doadores-list">
+        <li *ngFor="let d of doadores">
+          <span class="tipoSang">{{ d.tipoSang }}</span>:
+          <span class="idade">{{ d.idade }} Anos</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

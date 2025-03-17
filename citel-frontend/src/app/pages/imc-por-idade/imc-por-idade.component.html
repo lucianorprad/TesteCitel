@@ -1,0 +1,18 @@
+<div class="container">
+  <h2 class="text-center mt-3 mb-3">Consultar Média do IMC por Faixa Etária</h2>
+
+  <div class="d-flex justify-content-center mb-3">
+    <button (click)="imcPorIdade() "class="btn btn-primary">Consultar IMC por Faixa Etária</button>
+  </div>
+
+  <div class="row mb-3 justify-content-center gx-3">
+    <div class="list-group">
+      <ul class="doadores-list">
+        <li *ngFor="let d of doadores">
+          <span class="idade">{{ d.idade }}</span>:
+          <span class="imc">IMC {{ d.imc }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

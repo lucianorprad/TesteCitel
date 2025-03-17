@@ -1,0 +1,18 @@
+<div class="container">
+  <h2 class="text-center mt-3 mb-3">Consultar Quantidade de Doadores por tipo Sanguíneo Receptor</h2>
+
+  <div class="d-flex justify-content-center mb-3">
+    <button (click)="quantDoadoresPorTipoSang() "class="btn btn-primary">Consultar Quantidade de Doadores</button>
+  </div>
+
+  <div class="row mb-3 justify-content-center gx-3">
+    <div class="list-group">
+      <ul class="doadores-list">
+        <li *ngFor="let d of doadores">
+          <span class="tipoSang">{{ d.tipoSang }}</span>:
+          <span class="quantidade"> {{ d.quantidade }} Doadores </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

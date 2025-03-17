@@ -1,0 +1,18 @@
+<div class="container">
+  <h2 class="text-center mt-3 mb-3">Consultar Quantidade de Doadores por Estado</h2>
+
+  <div class="d-flex justify-content-center mb-3">
+    <button (click)="buscarDoadoresPorEstado() "class="btn btn-primary">Consultar Doadores</button>
+  </div>
+
+  <div class="row mb-3 justify-content-center gx-3">
+    <div class="list-group">
+      <ul class="doadores-list">
+        <li *ngFor="let d of doadores">
+          <span class="estado">{{ d.estado }}</span>:
+          <span class="quantidade">{{ d.quantidade }} doadores</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
